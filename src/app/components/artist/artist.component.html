@@ -1,0 +1,49 @@
+<app-loading *ngIf="loading" class="m-5"></app-loading>
+
+<div *ngIf="!loading" class="row animated fadeIn">
+  <div class="col-2">
+    <img [src]="artist.picture_xl" class="img-thumbnail img-circle" alt="">
+  </div>
+  <div class="col">
+    <h3>{{ artist.name}}</h3>
+    <p>
+      <a [href]="artist.link" target="_blank">
+        Ir a la pagina del artista
+      </a>
+    </p>
+  </div>
+  <div class="col-4 text-right">
+    <button routerLink="/search" class="btn btn-outline-danger">Regresar</button>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col m-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Foto</th>
+          <th>Album</th>
+          <th>Cancion</th>
+          <th>Vista Previa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let track of artistPlaylist">
+          <td>
+            <img [src]="track.album.cover | noimage" class="img-thumb" alt="">
+          </td>
+          <td>{{ track.album.title }}</td>
+          <td>{{ track.title }}</td>
+          <td>
+            <audio [src]="track.preview" controls></audio>
+            <!-- <iframe [src]="track.preview | domseguro" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+
+            <!-- <iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=400&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=3135556&app_id=1" width="400" height="350"></iframe> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
