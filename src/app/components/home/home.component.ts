@@ -16,7 +16,6 @@ export class HomeComponent {
     // Carga automatica del metodo  del servicio
     this.deezer.getArtistAlbumns()
       .subscribe(resp => {
-        console.log(resp);
         this.albumnExist = resp;
         this.loading = false;
     });

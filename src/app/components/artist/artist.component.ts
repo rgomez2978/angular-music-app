@@ -12,7 +12,10 @@ export class ArtistComponent {
 
   artist: any = {};
   albumTracks: any = {};
-  artistPlaylist: any [] = [];
+  artistPlaylist: any[] = [];
+  artistPlaylistImg: any;
+  artistPlaylistTitle: any;
+  artistPlaylistAlbum: any;
   loading: boolean;
 
   constructor(private router: ActivatedRoute, private deezer: DeezerService) {
@@ -21,9 +24,7 @@ export class ArtistComponent {
     // obtinen el id de la ruta
     this.router.params.subscribe(params => {
       this.getArtist(params['id']);
-      // this.getPlaylist(params['id']);
-      this.getPlaylist();
-      // console.log(params);
+      this.getPlaylist(params['albumid']);
     });
 
   }
@@ -33,7 +34,6 @@ export class ArtistComponent {
     this.loading = true;
     this.deezer.getArtistId(id)
       .subscribe(resp => {
-        console.log(resp);
         this.artist = resp;
         this.loading = false;
     });
@@ -41,12 +41,13 @@ export class ArtistComponent {
 
 
   // Obtener un playlist de un artista
-  getPlaylist() {
+  getPlaylist(id: string) {
     // this.deezer.getArtistPlayList(id)
-    this.deezer.getArtistTrack()
+    this.deezer.getArtistTrackList(id)
       .subscribe(resp => {
-        console.log(resp);
-        this.artistPlaylist = resp;
+        this.artistPlaylistImg = resp.cover;
+        this.artistPlaylistTitle = resp.title;
+        this.artistPlaylist = resp.tracks.data;
     });
   }
 

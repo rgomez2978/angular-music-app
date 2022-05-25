@@ -15,14 +15,11 @@ export class CardComponent  {
 
   // Obtine el id del artista
   getArtistId(item: any) {
-    let artistId;
-    let albumId;
+    let artistId, albumId, playlistId;
     artistId = item.artist.id;
     albumId = item.album.id;
-    console.log(artistId, albumId);
-    this.router.navigate(['/artist', artistId]);
-    // this.router.navigate(['/artist?id=23321&album=112232', artistId]);
+    playlistId = item.id;
+    this.router.navigate(['/artist/', artistId, albumId]);
   }
-
 
 }
