@@ -6616,11 +6616,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     means nothing animates during that delay, but the styles are still renderered. For this
                     to work the original offset values that exist in the original keyframes must be "warped"
                     so that they can take the new keyframe + delay into account.
-
+            
                     delay=1000, duration=1000, keyframes = 0 .5 1
-
+            
                     turns into
-
+            
                     delay=0, duration=2000, keyframes = 0 .33 .66 1
                    */
             // offsets between 1 ... n -1 are all warped by the keyframe stretch
@@ -11005,7 +11005,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     Since the Angular renderer code will return a collection of inserted
     nodes in all areas of a DOM tree, it's up to this algorithm to figure
     out which nodes are roots for each animation @trigger.
-
+    
     By placing each inserted node into a Set and traversing upwards, it
     is possible to find the @trigger elements and well any direct *star
     insertion nodes, if a @trigger root is found then the enter element

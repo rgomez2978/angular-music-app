@@ -1,30 +1,45 @@
-# Dezzerapp
+![styles](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![styles](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![styles](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![styles](https://img.shields.io/badge/API-yellow?style=for-the-badge&logo=json&logoColor=white)
+# Aplicación Angular de una sola página - Heroes de Marvel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+Projecto de filtro, busqueda y reproduccion canciones, Elaborado en [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1, Typescript, Bootstrap 4, API de Dezzer.
 
 
-https://rgomez2978.github.io/angular-music-app/#/home
+[DEMO](https://rgomez2978.github.io/angular-music-app)
 
-## Development server
+## Instalación de Librerias
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A continuación se indican las librerias necesarias para la ejecución del proyecto.
 
-## Code scaffolding
+    npm install jquery --save-dev
+    npm install @types/jquery --save-dev
+    npm install -D @types/jquery --save-dev
+    npm install jquery.easing --save-dev
+    npm install animate.css --save-dev
+    npm install bootstrap --save -exact
+    npm install zone.js --save-dev
+    ng add angular-cli-ghpages
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Levantar proyecto Angular
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    ng serve
+    ng serve -o
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Exportar proyecto - Build
+---
 
-## Running end-to-end tests
+Ejecute el comando `ng build` para exportar el proyecto. Al exportar el proyecto se almacenarán en el directorio `docs/`. Utilice el flag `--base-href` para exportar hacia produccion.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    ng build --base-href=https://rgomez2978.github.io/angular-music-app/
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Screenshots del proyecto
+
+
