@@ -40,6 +40,16 @@ Ejecute el comando `ng build` para exportar el proyecto. Al exportar el proyecto
 
 
 
+## Exportar proyecto en rama githubpage
+---
+
+Ejecute el comando `ng deploy` para exportar el proyecto. Al exportar el proyecto se almacenarán en el directorio `docs/`. Utilice el flag `--base-href` para exportar hacia produccion.
+
+    ng deploy --base-href=https://rgomez2978.github.io/angular-music-app/
+
+
+
+
 ## Screenshots del proyecto
 
 
