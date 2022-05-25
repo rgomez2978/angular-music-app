@@ -10,7 +10,6 @@ Projecto de filtro, busqueda y reproduccion canciones, Elaborado en [Angular CLI
 [DEMO](https://rgomez2978.github.io/angular-music-app)
 
 ## Instalación de Librerias
----
 
 A continuación se indican las librerias necesarias para la ejecución del proyecto.
 
@@ -25,14 +24,12 @@ A continuación se indican las librerias necesarias para la ejecución del proye
 
 
 ## Levantar proyecto Angular
----
 
     ng serve
     ng serve -o
 
 
 ## Exportar proyecto - Build
----
 
 Ejecute el comando `ng build` para exportar el proyecto. Al exportar el proyecto se almacenarán en el directorio `docs/`. Utilice el flag `--base-href` para exportar hacia produccion.
 
@@ -41,7 +38,6 @@ Ejecute el comando `ng build` para exportar el proyecto. Al exportar el proyecto
 
 
 ## Exportar proyecto en rama githubpage
----
 
 Ejecute el comando `ng deploy` para exportar el proyecto. Al exportar el proyecto se almacenarán en el directorio `docs/`. Utilice el flag `--base-href` para exportar hacia produccion.
 
