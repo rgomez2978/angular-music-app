@@ -1,8 +1,8 @@
 ![styles](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![styles](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![styles](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-![styles](https://img.shields.io/badge/API-yellow?style=for-the-badge&logo=json&logoColor=white)
-# Aplicación Angular - página simple de Heroes de Marvel
+![styles](https://img.shields.io/badge/API-yellow?style=for-the-badge&logo=api&logoColor=white)
+# Aplicación Angular - Aplicacion de busqueda y reproduccion de música
 
 Proyecto de filtro, busqueda y reproduccion canciones, Elaborado en [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1, Typescript, Bootstrap 4, API de Dezzer.
 
