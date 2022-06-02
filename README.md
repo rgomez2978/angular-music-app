@@ -4,7 +4,7 @@
 ![styles](https://img.shields.io/badge/API-yellow?style=for-the-badge&logo=api&logoColor=white)
 # Aplicación Angular - Aplicacion de busqueda y reproduccion de música
 
-Proyecto de filtro, busqueda y reproduccion canciones, Elaborado en [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1, Typescript, Bootstrap 4, API de Dezzer.
+Proyecto de filtro, búsqueda y reproducción canciones, Elaborado en [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1, Typescript, Bootstrap 4, API de Dezzer.
 
 
 [DEMO](https://rgomez2978.github.io/angular-music-app)
