@@ -2,7 +2,7 @@
 ![styles](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![styles](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![styles](https://img.shields.io/badge/API-yellow?style=for-the-badge&logo=json&logoColor=white)
-# Aplicación Angular de una sola página - Heroes de Marvel
+# Aplicación Angular - página simple de Heroes de Marvel
 
 Proyecto de filtro, busqueda y reproduccion canciones, Elaborado en [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1, Typescript, Bootstrap 4, API de Dezzer.
 
